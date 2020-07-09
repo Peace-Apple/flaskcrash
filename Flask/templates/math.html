@@ -6,10 +6,20 @@
     <title>Math Game</title>
 </head>
 <body>
-    <h1>Math Game</h1>
-    <p>What is {{ num1 }} * {{ num2 }}?</p>
-    <form action="/math_game" method="POST">
+    {% if get_flashed_messages() %}
+        {% for msg in get_flashed_messages() %}
+            <div style="margin: 50px auto; width: 500px; padding: 25px; border: 1px solid black;">
+                {{ msg }}
+            </div>
+        {% endfor%}
+    {%endif%}
 
+    <h1>Math Game</h1>
+    <p>What is {{ num1 }} + {{ num2 }}?</p>
+    <form action="/math_game" method="POST">
+        <input type="text" name="answer">
+        <input type="hidden" name="correct_answer" value={{ correct_answer }}>
+        <input type="submit" value="Check Answer!">
     </form>
 </body>
 </html>

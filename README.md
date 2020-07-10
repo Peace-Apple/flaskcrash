@@ -1,1 +1,1 @@
-Here I look at the basics and fundamentals of Flask, a python framework. I make use of different sources and work on different practice projects. This is in order to get a better and deeper understanding of the frameworks functionality.
+Here I look at the basics and fundamentals of Flask, a python framework. I make use of different sources and work on different practice projects. This is in order to get a better and deeper understanding of the framework's functionality.

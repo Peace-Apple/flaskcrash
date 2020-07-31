@@ -36,3 +36,4 @@ def math_game():
     num2 = random.randint(0, 100)
     correct_answer = num1 + num2
     return render_template('math.html', num1=num1, num2=num2, correct_answer=correct_answer)
+    

@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    name = 'Apple Lurve' #context variable
+    return render_template('index.html', name=name)
 
 @app.route('/contact')
 def contact():
